@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Memory game</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <img class="sound" src="./assets/img/svg/wondicon-ui-free-speaker_111240.svg" width="30px" height="30px"
+          alt="" />
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container main__container">
+        <table class="table__records">
+          <thead>
+            <tr>
+              <th class="title-left">Номер игры</th>
+              <th class="title-left">Количество ходов</th>
+            </tr>
+          </thead>
+          <tbody class="body__table-records"></tbody>
+        </table>
+        <section class="memory-game">
+          <div class="memory-card" data-framework="audi">
+            <img src="./assets/img/svg/audi-11.svg" alt="audi" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="audi">
+            <img src="./assets/img/svg/audi-11.svg" alt="audi" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="ford">
+            <img src="./assets/img/svg/ford-3.svg" alt="ford" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="ford">
+            <img src="./assets/img/svg/ford-3.svg" alt="ford" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="mersedes">
+            <img src="./assets/img/svg/mercedes-benz-2.svg" alt="mersedes" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="mersedes">
+            <img src="./assets/img/svg/mercedes-benz-2.svg" alt="mersedes" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="bmw">
+            <img src="./assets/img/svg/bmw-2.svg" alt="bmw" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="bmw">
+            <img src="./assets/img/svg/bmw-2.svg" alt="bmw" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="honda">
+            <img src="./assets/img/svg/honda-7.svg" alt="honda" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="honda">
+            <img src="./assets/img/svg/honda-7.svg" alt="honda" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="mazda">
+            <img src="./assets/img/svg/mazda-2.svg" alt="mazda" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+          <div class="memory-card" data-framework="mazda">
+            <img src="./assets/img/svg/mazda-2.svg" alt="mazda" class="front-face" />
+            <img src="./assets/img/svg/auto.svg" alt="auto" class="back-face" />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__inner">
+          <div class="footer__year">
+            <span>©</span>
+            <span>2022</span>
+            <span>
+              <a href="https://github.com/AndrewMatsiash">github</a>
+            </span>
+          </div>
+          <div class="text__moves-btn">
+            <p class="moves">Количество ходов : <span>0</span></p>
+            <button class="start-btn border-button">Start</button>
+          </div>
+          <a href="https://rs.school/js-stage0/ " class="logo-rsschool" target="_blank"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

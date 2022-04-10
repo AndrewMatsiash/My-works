@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Matsiash Andrei</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <ul class="menu_list">
+          <li class="menu_item">
+            <a href="#my_skills" class="menu_link">my skills</a>
+          </li>
+          <li class="menu_item">
+            <a href="#about_me" class="menu_link">about me</a>
+          </li>
+          <li class="menu_item">
+            <a href="#language" class="menu_link">language</a>
+          </li>
+          <li class="menu_item">
+            <a href="#contacts" class="menu_link">contacts</a>
+          </li>
+          <li class="menu_item">
+            <a href="#my_quality" class="menu_link">my quality</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="info">
+        <img class="avatar" src="./img/person.jpeg" alt="avatar" />
+        <div class="info__text">
+          <h1>Matsiash Andrei</h1>
+          <p>Trainee/Junior Front-end Developer</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section id='my_skills' class="skills">
+        <h2 class="title">my skills</h2>
+        <ul class="skills__list">
+          <li class="skills__html">HTML</li>
+          <li class="skills__css">CSS</li>
+          <li class="skills__js">JavaScript Basic</li>
+          <li class="skills__git">Git</li>
+          <li class="skills__bootstrap">Bootstrap</li>
+          <li class="skills__figma">Figma</li>
+        </ul>
+
+        <div class="container_code_courses">
+          <div class="code-example">
+            <h2 class='title'>My code example</h2>
+            <code class="code_text">
+          const myPic = document.querySelector('.myPic');
+          myPic.addEventListener('click', function() {
+          myPic.classList.toggle('circle');
+          })
+
+        </code>
+          </div>
+          <div class="courses">
+            <h2 class="title">Courses</h2>
+            <ol class="courses_list">
+              <li class="courses_list-item">htmlacademy.ru</li>
+              <li class="courses_list-item">JavaScript on learnjavascript.ru</li>
+              <li class="courses_list-item">RS Schools Course "JavaScript/Front-end. Stage 0"</li>
+            </ol>
+          </div>
+        </div>
+
+
+      </section>
+
+
+      <section id='about_me' class="about__me">
+        <h2 class="title">About me</h2>
+        <p>
+          My name is Andrey, I am 27 years old, I live in the city of Minsk.
+          I work as an installer of communication networks.
+          My dream is to finally change my profession and develop in the field of information technology, create
+          something very
+          it is necessary in a team and to be useful to society.
+          I write poetry, people say good things, I believe I can write code just as well!
+        </p>
+      </section>
+
+      <section id='language' class="language">
+        <h2 class="title">language</h2>
+        <ul class="language__list">
+          <li class="language__ru">
+            <a href="">Russian(native speaker)</a>
+          </li>
+          <li class="language__en">
+            <a href="">English(elementary)</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id='contacts' class="contacts">
+        <h2 class="title">Contacts</h2>
+        <ul class="contacts__list">
+          <li class="contacts__email">
+            <a href="mailto:rabotatnadomne@gmail.com">E-mail</a>
+          </li>
+          <li class="contacts__phone">
+            <a href="tel:3753102444">Phone</a>
+          </li>
+          <li class="contacts__telegram">
+            <a href="https://t.me/andry_mat">Telegram</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id='my_quality' class="quality">
+        <h2 class="title">my quality</h2>
+        <ol class="quality__list">
+          <li class="quality__list-item">learnability</li>
+          <li class="quality__list-item">sociability</li>
+          <li class="quality__list-item">positive</li>
+          <li class="quality__list-item">punctuality</li>
+          <li class="quality__list-item">zeal</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <a href="https://github.com/TheMrCrowley" target="_blank">
+            <img src="./img/icons/github.svg" alt="github_icon" />
+          </a>
+        </div>
+        <div>
+          <a href="https://rs.school/js/" target="_blank">
+            <img src="./img/icons/rs_school_js.svg" alt="rs-school-logo" />
+          </a>
+        </div>
+        <div class="date">
+          <p>Created in 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

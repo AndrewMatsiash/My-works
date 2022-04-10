@@ -1,0 +1,289 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #ffff;
+  background: #000000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 1s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #bdae82;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  display: flex;
+  padding: 25px 0 0 0;
+  align-items: center;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background-image: url(../assets/svg/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+
+.logo, .logo-rsschool {
+  display: block;
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: 14px;
+}
+
+.menu__list {
+  display: flex;
+  padding-bottom: 9px;
+
+}
+
+.menu__item {
+  margin-left: 30px;
+}
+
+.active {
+  color: #BDAE82;
+}
+
+.logo {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+
+.logo:hover {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(7deg) brightness(92%) contrast(100%);
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.foto__nature {
+  background-image: url(../assets/img/solovey.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pause-btn {
+  background-image: url(../assets/svg/play.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 128.9px;
+  Height: 130px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.5s;
+
+}
+
+.play-btn.pause-btn {
+  background-image: url(../assets/svg/pause.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 128.9px;
+  Height: 130px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.5s;
+
+}
+
+
+
+
+
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+
+.logo-rsschool {
+  background-image: url(../assets/svg/rss.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 150px;
+}
+
+.logo-rsschool:hover, .pause-btn:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.rsschool {
+  padding-left: 40px;
+}
+
+
+.footer__year span {
+  margin-left: 15px;
+}
+
+.footer__year span:first-child {
+  margin-left: 0px;
+}
+
+.rsschool-text {
+  padding-left: 38px;
+}
+
+.hamburger {
+  display: none;
+  width: 51px;
+  height: 50px;
+  padding: 7px 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 8;
+}
+
+.hamburger:hover .line-menu {
+  background: #BDAE82;
+}
+
+.line-menu {
+  display: block;
+  height: 3px;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: #ffff;
+  transition: all 0.3s ease-in-out;}
+
+
+
+@media(max-width:768px) {
+
+  .menu__list {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    color: #ffff;
+    top: 0;
+    /* right: -200%; */
+    transform: translateX(100%);
+    /* transition: all 0.8s ease-in-out; */
+    width: 619px;
+    height: 100vh;
+    padding: 134px 0 0 91px;
+    /* transition:  0.8s ease-in-out; */
+  }
+
+  .menu__item {
+    margin-bottom: 10px;
+    font-size: 35px;
+    line-height: 73px;
+    margin-bottom: 16px;
+  }
+
+  .hamburger {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 7px 0;
+    margin-left: 25px;
+  }
+
+  .menu__list.open {
+    /* right: 0; */
+    transform: translateX(0%);
+    transition: all 0.8s ease-in-out;
+    left: 20%;
+  }
+
+
+  .hamburger.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+   
+  }
+
+  .hamburger.open .line2 {
+    opacity: 0;
+  }
+
+  .hamburger.open .line3 {
+    transform: rotate(45deg) translate(-9px, -10px);
+    
+  }
+  .hamburger.open .line3:hover {
+    transform: rotate(45deg) translate(-9px, -10px);
+    
+  }
+
+  .hamburger.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.open .line2 {
+    opacity: 0;
+  }
+
+  .hamburger.open .line3 {
+    transform: rotate(45deg) translate(-9px, -10px);
+  }
+}
