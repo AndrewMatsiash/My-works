@@ -14,3 +14,5 @@ https://andrewmatsiash.github.io/My-works/js30-2.1-random-jokes
 https://andrewmatsiash.github.io/My-works/js30-3.2-memory-game/ 
 ***
 https://andrewmatsiash.github.io/My-works/js30-eco-sounds/
+***
+https://andrewmatsiash.github.io/RSS-Virtual-Keyboard/
